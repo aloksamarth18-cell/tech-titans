@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Campus Academic Resource Sharing Platform</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #eaf4ff;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #4da3ff;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      background-color: #ffffff;
+      width: 80%;
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 123, 255, 0.15);
+    }
+
+    h2 {
+      color: #1e6fb9;
+    }
+
+    p {
+      line-height: 1.6;
+      font-size: 16px;
+      color: #333;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+      font-size: 15px;
+      color: #2c3e50;
+    }
+
+    /* Resource cards */
+    #resourceList {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .resource-card {
+      background: #f9fbff;
+      padding: 15px;
+      border-radius: 6px;
+      border-left: 5px solid #4da3ff;
+    }
+
+    /* Course cards */
+    .course-card {
+      background: #f1f8ff;
+      padding: 15px;
+      border-radius: 6px;
+      margin-bottom: 12px;
+      border-left: 5px solid #1e6fb9;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #2c3e50;
+    }
+.teacher-notes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.teacher-card {
+  background-color: #f9fbff;
+  padding: 15px;
+  border-radius: 6px;
+  border-left: 5px solid #4da3ff;
+}
+
+.teacher-card h3 {
+  margin-top: 0;
+  color: #1e6fb9;
+}
+
+.teacher-card ul {
+  padding-left: 18px;
+}
+  </style>
+</head>
+
+<body onload="loadResources()">
+
+<!-- 🔷 TOP HEADING -->
+<header>
+  <h1>Campus Academic Resource Sharing Platform</h1>
+  <p>Share • Learn • Grow Together</p>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="upload.html">Upload</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="register.html">Register</a>
+    <a href="Feedback.html">Feedback</a>
+    <a href="online test.html">Online Test</a>
+  </nav>
+</header>
+
+<!-- 🔷 WEBSITE DESCRIPTION -->
+<div class="container">
+  <h2>🌐 Website Description</h2>
+  <p>
+    The Campus Academic Resource Sharing Platform is a web-based application developed to support
+    and enhance the academic experience of college students by providing a centralized digital
+    space for sharing and accessing learning materials.
+  </p>
+
+  <p>
+    The platform allows students to upload, browse, download, and manage various academic
+    resources such as class notes, previous year question papers, study materials, reference
+    documents, project reports, and assignment solutions.
+  </p>
+
+  <p>
+    Privacy and access control are key features of the platform. Students can mark resources as
+    private or public, ensuring secure and fair sharing of academic materials.
+  </p>
+
+  <h2>🎯 Purpose of the Website</h2>
+  <ul>
+    <li>To provide a centralized digital platform for academic materials</li>
+    <li>To reduce dependency on physical notes and photocopies</li>
+    <li>To encourage peer-to-peer knowledge sharing</li>
+    <li>To help students prepare better for exams and projects</li>
+    <li>To save time by making resources easily searchable and downloadable</li>
+  </ul>
+</div>
+<!-- 🔷 NOTES / RESOURCES SECTION -->
+<div class="container">
+ <!-- 🔷 ONLINE COURSES SECTION -->
+<div class="container">
+  <h2>🎓 Online Courses</h2>
+
+  <div class="course-card">
+    <h3>Data Structures & Algorithms</h3>
+    <p>Complete DSA course for placements and exams.</p>
+    <p class="price">Cost: ₹1,999</p>
+  </div>
+
+  <div class="course-card">
+    <h3>Web Development (HTML, CSS, JavaScript)</h3>
+    <p>Learn full frontend development from scratch.</p>
+    <p class="price">Cost: ₹1,499</p>
+  </div>
+
+  <div class="course-card">
+    <h3>Python Programming</h3>
+    <p>Beginner to advanced Python with projects.</p>
+    <p class="price">Cost: ₹1,299</p>
+  </div>
+
+  <div class="course-card">
+    <h3>Database Management Systems</h3>
+    <p>SQL, normalization, and real-world examples.</p>
+    <p class="price">Cost: ₹999</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+<!-- 🔹 Teachers & Notes Section -->
+<div class="container">
+  <h2>👩‍🏫 Faculty Notes Available</h2>
+  <p>Explore notes prepared or recommended by faculty members.</p>
+
+  <div class="teacher-notes">
+
+    <div class="teacher-card">
+      <h3>Dr. Anil Kumar</h3>
+      <p><strong>Subject:</strong> Data Structures</p>
+      <ul>
+        <li>Unit 1 – Introduction to Data Structures</li>
+        <li>Stacks & Queues Notes</li>
+        <li>Previous Year Question Papers</li>
+      </ul>
+    </div>
+
+    <div class="teacher-card">
+      <h3>Prof. Sneha Rao</h3>
+      <p><strong>Subject:</strong> Operating Systems</p>
+      <ul>
+        <li>Process Management Notes</li>
+        <li>Memory Management PPT</li>
+        <li>OS Model Question Papers</li>
+      </ul>
+    </div>
+
+    <div class="teacher-card">
+      <h3>Mr. Ravi Sharma</h3>
+      <p><strong>Subject:</strong> Database Management Systems</p>
+      <ul>
+        <li>ER Diagrams Notes</li>
+        <li>SQL Queries Practice</li>
+        <li>Normalization Study Material</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+

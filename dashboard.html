@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Dashboard</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Internal CSS -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #eaf4ff;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #4da3ff;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      background: white;
+      width: 80%;
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 123, 255, 0.15);
+    }
+
+    .dashboard-info {
+      background: #f1f7ff;
+      padding: 15px;
+      border-radius: 6px;
+      margin-bottom: 20px;
+      border-left: 5px solid #4da3ff;
+    }
+
+    .dashboard-info ul {
+      margin: 10px 0 0 20px;
+    }
+
+    #myResources {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .resource-card {
+      background: #f9fbff;
+      padding: 15px;
+      border-radius: 6px;
+      border-left: 5px solid #4da3ff;
+    }
+
+    .resource-card h4 {
+      margin: 0 0 8px;
+      color: #1e6fb9;
+    }
+
+    .actions button {
+      margin-right: 5px;
+      padding: 5px 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .edit {
+      background-color: #1e6fb9;
+      color: white;
+    }
+
+    .delete {
+      background-color: #e74c3c;
+      color: white;
+    }
+  </style>
+</head>
+
+<body onload="loadMyResources()">
+
+<!-- 🔷 HEADER -->
+<header>
+  <h1>User Dashboard</h1>
+  <p>Manage Your Uploaded Academic Resources</p>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="upload.html">Upload</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="feedback.html">Feedback</a>
+  </nav>
+</header>
+
+<!-- 🔷 DASHBOARD CONTENT -->
+<div class="container">
+
+  <h2>📁 My Uploads</h2>
+
+  <!-- Dashboard Info Section -->
+  <div class="dashboard-info">
+    <p><strong>Dashboard Features:</strong></p>
+    <ul>
+      <li>Displays user’s uploaded notes</li>
+      <li>Allows edit and delete actions</li>
+      <li>Helps users manage their content</li>
+      <li>Improves usability and organization</li>
+    </ul>
+  </div>
+
+  <!-- User Uploaded Resources -->
+  <div id="myResources">
+    <!-- Resources will be loaded here using JavaScript -->
+  </div>
+
+</div>
+
+<!-- External JavaScript -->
+<script src="script.js"></script>
+
+</body>
+</html>

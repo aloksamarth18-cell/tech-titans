@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exam Section</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  background-color: #eaf4ff;
+  margin: 0;
+}
+
+header {
+  background-color: #4da3ff;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+.container {
+  background: white;
+  width: 80%;
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+.question {
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #4da3ff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #1e6fb9;
+}
+  </style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Offline Exam</title>
+  <link rel="stylesheet" href="exam.css">
+</head>
+<body>
+
+<header>
+  <h1>📝 Offline Exam System</h1>
+  <p>No Internet Required</p>
+</header>
+
+<div class="container">
+  <h2>Subject: Data Structures</h2>
+
+  <form id="examForm">
+
+    <div class="question">
+      <p>1. What is a Stack?</p>
+      <label><input type="radio" name="q1" value="0"> Linear structure</label><br>
+      <label><input type="radio" name="q1" value="1"> LIFO data structure</label><br>
+      <label><input type="radio" name="q1" value="0"> FIFO structure</label>
+    </div>
+
+    <div class="question">
+      <p>2. Which data structure uses FIFO?</p>
+      <label><input type="radio" name="q2" value="1"> Queue</label><br>
+      <label><input type="radio" name="q2" value="0"> Stack</label><br>
+      <label><input type="radio" name="q2" value="0"> Tree</label>
+    </div>
+
+    <div class="question">
+      <p>3. Which is not linear?</p>
+      <label><input type="radio" name="q3" value="0"> Stack</label><br>
+      <label><input type="radio" name="q3" value="0"> Queue</label><br>
+      <label><input type="radio" name="q3" value="1"> Tree</label>
+    </div>
+
+    <button type="button" onclick="submitExam()">Submit Exam</button>
+  </form>
+
+  <h3 id="result"></h3>
+</div>
+
+<script src="exam.js"></script>
+</body>
+</html>
